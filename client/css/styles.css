@@ -1,0 +1,29 @@
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.avatar.female { background: #d63384; }
+.avatar.male   { background: #0d6efd; }
+.avatar.other  { background: #6f42c1; }
+
+.blood-badge {
+  min-width: 2.75rem;
+}
+
+#patientsTableBody tr.row-highlight {
+  animation: highlight 1.5s ease-out;
+}
+
+@keyframes highlight {
+  from { background-color: rgba(25, 135, 84, 0.25); }
+  to   { background-color: transparent; }
+}
